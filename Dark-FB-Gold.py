@@ -35,14 +35,14 @@ br.addheaders = [('User-Agent','Opera/9.80 (Android; Opera Mini/32.0.2254/85. U;
 	
 #-Warna-#
 
-    w = 'mhkbpcP'
+
     d = ''
     for i in x:
         d += '!'+w[random.randint(0,len(w)-1)]+i
     return cetak(d)
     
 def cetak(x):
-    w = 'mhkbpcP'
+    
     for i in w:
         j = w.index(i)
         x= x.replace('!%s'%i,'\033[%s;1m'%str(31+j))
